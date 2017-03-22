@@ -30,9 +30,9 @@ void main()
    }
 
 }
-void stateTransition(char input)
+void stateTransition(char input,int State)
 {
-	if(currentState == 0)
+	if(State == 0)
 	{
 		if(input=='a')
 		{
@@ -49,6 +49,60 @@ void stateTransition(char input)
 			currentState = 2;
 			printf(" pouring one tea right up. ");
 		}
+	}
+	if(State == 1)
+	{
+		if(input=='a')
+		{
+			currentState = 1;
+			printf(" pouring one glass of  coke  ");
+		}
+		else if(input=='b')
+		{
+			currentState = 2;
+			printf(" pouring one hot cup of coffee");
+		}
+		else if(input=='c')
+		{
+			currentState = 2;
+			printf(" pouring one tea right up. ");
+		}	
+	}
+	if(State == 2)
+	{
+		if(input=='a')
+		{
+			currentState = 1;
+			printf(" pouring one glass of  coke  ");
+		}
+		else if(input=='b')
+		{
+			currentState = 2;
+			printf(" pouring one hot cup of coffee");
+		}
+		else if(input=='c')
+		{
+			currentState = 2;
+			printf(" pouring one tea right up. ");
+		}	
+	}
+	if(State == 3)
+	{
+		if(input=='a')
+		{
+			currentState = 1;
+			printf(" pouring one glass of  coke  ");
+		}
+		else if(input=='b')
+		{
+			currentState = 2;
+			printf(" pouring one hot cup of coffee");
+		}
+		else if(input=='c')
+		{
+			currentState = 2;
+			printf(" pouring one tea right up. ");
+		}	
 	}
 
 }
